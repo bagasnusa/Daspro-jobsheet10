@@ -16,10 +16,12 @@ public class Bioskop06 {
         System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
-        // Menampilkan panjang setiap baris menggunakan for loop
-        for (int i = 0; i < penonton.length; i++) {
-            System.out.println("Panjang baris " + i + ": " + penonton[i].length);
-        }
+        // Menampilkan panjang setiap baris menggunakan for loop No 5
+        System.out.println(penonton.length);
+
+        for (String[] barisPenonton : penonton){
+        System.out.println("Panjang baris: " + barisPenonton.length);
+    }
     }
 }
 
